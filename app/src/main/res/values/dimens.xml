@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Title -->
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="titleMarginTop">10dp</dimen>
+    <dimen name="titleMarginBottom">5dp</dimen>
+    <dimen name="titleMarginStart">5dp</dimen>
+    <dimen name="titleMarginEnd">5dp</dimen>
+
+    <!-- Base Button -->
+    <dimen name="buttonMargin">10dp</dimen>
+
+    <!-- Footer Button -->
+    <dimen name="footerButtonMarginTop">5dp</dimen>
+    <dimen name="footerButtonMarginBottom">10dp</dimen>
+    <dimen name="footerButtonMarginStart">10dp</dimen>
+    <dimen name="footerButtonMarginEnd">10dp</dimen>
+
+</resources>

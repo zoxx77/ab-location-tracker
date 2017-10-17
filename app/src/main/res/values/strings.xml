@@ -7,4 +7,5 @@
     <string name="enter_name">Enter name</string>
     <string name="enter_description">Enter description</string>
     <string name="start">Start</string>
+    <string name="test">Test</string>
 </resources>
