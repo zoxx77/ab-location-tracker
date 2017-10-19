@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.MyTracksActivity">
+    tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.NewTrackActivity">
 
     <!-- Title -->
     <TextView
-        android:id="@+id/textViewMyTracksTitle"
-        android:text="@string/my_tracks_title"
+        android:id="@+id/textViewNewTrackTitle"
+        android:text="@string/new_track_title"
         style="@style/Title"/>
 
     <!-- New Track button -->
     <Button
-        android:id="@+id/buttonNewTrack"
-        android:text="@string/my_tracks_new_track"
-        android:onClick="onNewTrack"
+        android:id="@+id/buttonStartTrack"
+        android:text="@string/new_track_start_track"
+        android:onClick="onStartTrack"
         style="@style/FooterButton" />
 
 </RelativeLayout>
