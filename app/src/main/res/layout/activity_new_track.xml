@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.NewTrackActivity">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.NewTrackActivity">
 
-    <!-- Title -->
-    <TextView
-        android:id="@+id/textViewNewTrackTitle"
-        android:text="@string/new_track_title"
-        style="@style/Title"/>
+<!-- Title -->
+<TextView
+    android:id="@+id/textViewNewTrackTitle"
+    android:text="@string/new_track_title"
+    style="@style/Title"/>
 
-    <!-- New Track button -->
-    <Button
-        android:id="@+id/buttonStartTrack"
-        android:text="@string/new_track_start_track"
-        android:onClick="onStartTrack"
-        style="@style/FooterButton" />
+<!-- New Track button -->
+<Button
+    android:id="@+id/buttonStartTrack"
+    android:text="@string/new_track_start_track"
+    android:onClick="onStartTrack"
+    style="@style/FooterButton" />
 
 </RelativeLayout>

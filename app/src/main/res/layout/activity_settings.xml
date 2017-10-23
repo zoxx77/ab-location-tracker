@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.SettingsActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewSettingsTitle"
+        android:text="@string/settings_title"
+        style="@style/Title"/>
+
+    <!-- New Track button -->
+    <Button
+        android:id="@+id/buttonStartTrack"
+        android:text="@string/settings_done"
+        android:onClick="onSettingsDone"
+        style="@style/FooterButton" />
+</RelativeLayout>

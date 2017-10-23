@@ -8,6 +8,12 @@
     <dimen name="titleMarginStart">5dp</dimen>
     <dimen name="titleMarginEnd">5dp</dimen>
 
+    <!--Subtitle-->
+    <dimen name="subtitleTextSize">16sp</dimen>
+    <dimen name="subtitleMarginBottom">15dp</dimen>
+    <dimen name="subtitleMarginStart">5dp</dimen>
+    <dimen name="subtitleMarginEnd">5dp</dimen>
+
     <!-- Base Button -->
     <dimen name="buttonMargin">10dp</dimen>
 
@@ -16,5 +22,8 @@
     <dimen name="footerButtonMarginBottom">10dp</dimen>
     <dimen name="footerButtonMarginStart">10dp</dimen>
     <dimen name="footerButtonMarginEnd">10dp</dimen>
+
+    <!--Image Button-->
+    <dimen name="imageButtonMargin">10dp</dimen>
 
 </resources>

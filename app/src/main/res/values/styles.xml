@@ -1,20 +1,17 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="LocationTrackerThemeDark" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <style name="LocationTrackerTheme" parent="android:Theme.Black.NoTitleBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
 
     <!-- Title -->
     <style name="Title" parent="@android:style/TextAppearance">
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:gravity">start</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
         <item name="android:textSize">@dimen/titleTextSize</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
@@ -27,6 +24,15 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
     </style>
+
+    <!--Subtitle-->
+    <style name="Subtitle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorSecondaryLight</item>
+        <item name="android:textSize">@dimen/subtitleTextSize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
 
     <!-- Base Button -->
     <style name="Button">
@@ -45,5 +51,14 @@
         <item name="android:layout_marginBottom">@dimen/footerButtonMarginBottom</item>
         <item name="android:layout_marginStart">@dimen/footerButtonMarginStart</item>
         <item name="android:layout_marginEnd">@dimen/footerButtonMarginEnd</item>
+    </style>
+
+    <!-- Image Button -->
+    <style name="ImageButton" parent="Button">
+        <item name="android:src">@android:drawable/ic_menu_preferences</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/imageButtonMargin</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
     </style>
 </resources>

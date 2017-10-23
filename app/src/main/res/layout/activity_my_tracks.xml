@@ -11,6 +11,13 @@
         android:text="@string/my_tracks_title"
         style="@style/Title"/>
 
+    <!-- Settings button-->
+    <ImageButton
+        android:id="@+id/buttonSettings"
+        android:contentDescription="@string/settings_title"
+        android:onClick="onOpenSettings"
+        style="@style/ImageButton"/>
+
     <!-- New Track button -->
     <Button
         android:id="@+id/buttonNewTrack"

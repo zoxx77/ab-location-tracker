@@ -8,4 +8,11 @@
     <string name="enter_description">Enter description</string>
     <string name="start">Start</string>
     <string name="test">Test</string>
+    <string name="new_track_title">New Track</string>
+    <string name="new_track_start_track">Start</string>
+    <string name="my_track">My Track</string>
+    <string name="add_location_title">Add Location</string>
+    <string name="add_location_add">Add</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_done">Done</string>
 </resources>

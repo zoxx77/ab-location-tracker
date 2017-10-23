@@ -13,7 +13,12 @@ public class MyTracksActivity extends Activity {
         setContentView(R.layout.activity_my_tracks);
     }
 
-    public void onClick(View view) {
+    public void onNewTrack(View view) {
         startActivity(new Intent(this, NewTrackActivity.class));
+    }
+
+    public void onOpenSettings(View view) {
+        Intent settingsIntent = new Intent(this, SettingsActivity.class);
+        startActivity(settingsIntent);
     }
 }
