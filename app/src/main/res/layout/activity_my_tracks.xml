@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,21 +9,36 @@
     <!-- Title -->
     <TextView
         android:id="@+id/textViewMyTracksTitle"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:text="@string/my_tracks_title"
-        style="@style/Title"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Settings button-->
     <ImageButton
         android:id="@+id/buttonSettings"
+        style="@style/ImageButton"
+        android:layout_alignEnd="@+id/textViewMyTracksTitle"
+        android:layout_alignTop="@+id/textViewMyTracksTitle"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/settings_title"
         android:onClick="onOpenSettings"
-        style="@style/ImageButton"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- New Track button -->
     <Button
         android:id="@+id/buttonNewTrack"
-        android:text="@string/my_tracks_new_track"
+        style="@style/FooterButton"
         android:onClick="onNewTrack"
-        style="@style/FooterButton" />
+        android:text="@string/my_tracks_new_track"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

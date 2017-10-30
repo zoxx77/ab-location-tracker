@@ -1,21 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.NewTrackActivity">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidbootcamp.zoranmiladinovic.endava.locationtracker.NewTrackActivity">
 
 <!-- Title -->
 <TextView
     android:id="@+id/textViewNewTrackTitle"
     android:text="@string/new_track_title"
-    style="@style/Title"/>
+    style="@style/Title"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
-<!-- New Track button -->
-<Button
-    android:id="@+id/buttonStartTrack"
-    android:text="@string/new_track_start_track"
-    android:onClick="onStartTrack"
-    style="@style/FooterButton" />
+    <TextView
+        android:id="@+id/textViewNewTrackName"
+        style="@style/FieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/new_track_name"
+        app:layout_constraintStart_toStartOf="@+id/textViewNewTrackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewTrackTitle" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/editTextNewTrackName"
+        style="@style/FieldEditText"
+        android:ems="10"
+        android:hint="@string/new_track_enter_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNewTrackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewTrackName" />
+
+    <TextView
+        android:id="@+id/textViewNewTrackDescription"
+        style="@style/FieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/new_track_description"
+        app:layout_constraintStart_toStartOf="@+id/textViewNewTrackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewTrackName" />
+
+    <EditText
+        android:id="@+id/editTextNewTrackDescription"
+        style="@style/FieldEditText"
+        android:ems="10"
+        android:hint="@string/new_track_enter_description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNewTrackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewTrackDescription" />
+
+    <!-- Start Track button -->
+    <Button
+        android:id="@+id/buttonStartTrack"
+        android:text="@string/new_track_start_track"
+        android:onClick="onStartTrack"
+        style="@style/FooterButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

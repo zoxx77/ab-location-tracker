@@ -18,7 +18,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/titleMarginTop</item>
-        <item name="android:layout_marginBottom">@dimen/titleMarginBottom</item>
+        <!--<item name="android:layout_marginBottom">@dimen/titleMarginBottom</item>-->
         <item name="android:layout_marginStart">@dimen/titleMarginStart</item>
         <item name="android:layout_marginEnd">@dimen/titleMarginEnd</item>
         <item name="android:layout_alignParentTop">true</item>
@@ -33,6 +33,23 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
+    <!-- Field Label -->
+    <style name="FieldLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--Field Edit Text-->
+    <style name="FieldEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
 
     <!-- Base Button -->
     <style name="Button">
@@ -46,8 +63,6 @@
 
     <!-- Footer Button -->
     <style name="FooterButton" parent="Button">
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_marginTop">@dimen/footerButtonMarginTop</item>
         <item name="android:layout_marginBottom">@dimen/footerButtonMarginBottom</item>
         <item name="android:layout_marginStart">@dimen/footerButtonMarginStart</item>
         <item name="android:layout_marginEnd">@dimen/footerButtonMarginEnd</item>
@@ -61,4 +76,5 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_alignParentEnd">true</item>
     </style>
+
 </resources>

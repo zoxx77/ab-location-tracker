@@ -14,11 +14,13 @@
     <dimen name="subtitleMarginStart">5dp</dimen>
     <dimen name="subtitleMarginEnd">5dp</dimen>
 
+    <!--Text Labels-->
+    <dimen name="labelTextSize">16sp</dimen>
+
     <!-- Base Button -->
     <dimen name="buttonMargin">10dp</dimen>
 
     <!-- Footer Button -->
-    <dimen name="footerButtonMarginTop">5dp</dimen>
     <dimen name="footerButtonMarginBottom">10dp</dimen>
     <dimen name="footerButtonMarginStart">10dp</dimen>
     <dimen name="footerButtonMarginEnd">10dp</dimen>
