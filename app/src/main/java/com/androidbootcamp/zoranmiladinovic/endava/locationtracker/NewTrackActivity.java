@@ -7,11 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 public class NewTrackActivity extends Activity {
 
     EditText editTextName;
     EditText editTextDescription;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class NewTrackActivity extends Activity {
 
         editTextName = findViewById(R.id.editTextNewTrackName);
         editTextDescription = findViewById(R.id.editTextNewTrackDescription);
+        progressBar = findViewById(R.id.progressBarNewTrack);
     }
 
     public void onStartTrack(View view) {
@@ -54,6 +57,12 @@ public class NewTrackActivity extends Activity {
             return;
         }
 
-        startActivity(new Intent(this, TrackDetailsActivity.class));
+        showProgressBar();
+
+        // startActivity(new Intent(this, TrackDetailsActivity.class));
+    }
+
+    private void showProgressBar() {
+        progressBar.setVisibility(View.VISIBLE);
     }
 }
