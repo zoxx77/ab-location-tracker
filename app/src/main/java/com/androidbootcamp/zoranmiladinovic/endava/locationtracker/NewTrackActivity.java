@@ -3,7 +3,6 @@ package com.androidbootcamp.zoranmiladinovic.endava.locationtracker;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -20,7 +19,7 @@ public class NewTrackActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_track);
 
-        editTextName = findViewById(R.id.editTextNewTrackName);
+        editTextName = findViewById(R.id.editTextSettingsSamplingRate);
         editTextDescription = findViewById(R.id.editTextNewTrackDescription);
         progressBar = findViewById(R.id.progressBarNewTrack);
     }

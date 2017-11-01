@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,12 +10,101 @@
     <TextView
         android:id="@+id/textViewSettingsTitle"
         android:text="@string/settings_title"
-        style="@style/Title"/>
+        style="@style/Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- New Track button -->
-    <Button
-        android:id="@+id/buttonStartTrack"
-        android:text="@string/settings_done"
-        android:onClick="onSettingsDone"
-        style="@style/FooterButton" />
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textViewSettingsSamplingRate"
+        style="@style/FieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_sampling_rate"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsTitle" />
+
+    <EditText
+        android:id="@+id/editTextSettingsSamplingRate"
+        style="@style/FieldEditText"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/settings_enter_sampling_rate"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsSamplingRate" />
+
+    <TextView
+        android:id="@+id/textViewSettingsSpeed"
+        style="@style/FieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_speed"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSettingsSamplingRate" />
+
+    <EditText
+        android:id="@+id/editTextSettingsSpeed"
+        style="@style/FieldEditText"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/settings_enter_speed"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsSpeed" />
+
+    <TextView
+        android:id="@+id/textViewSettingsHomeCity"
+        style="@style/FieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_home_city"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSettingsSpeed" />
+
+    <Spinner
+        android:id="@+id/spinnerSettingsCities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsHomeCity" />
+
+    <TextView
+        android:id="@+id/textViewSettingsLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_latitude"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSettingsCities"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSettingsCities" />
+
+    <TextView
+        android:id="@+id/textViewSettingsLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/settings_longitude"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsLatitude" />
+
+    <TextView
+        android:id="@+id/textViewSettingsAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/settings_altitude"
+        app:layout_constraintStart_toStartOf="@+id/textViewSettingsLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSettingsLongitude" />
+
+</android.support.constraint.ConstraintLayout>
