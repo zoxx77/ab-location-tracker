@@ -43,6 +43,17 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
+    <!--Unit Label-->
+    <style name="UnitLabel">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/labelTextSize</item>
+    </style>
+
     <!--Field Edit Text-->
     <style name="FieldEditText">
         <item name="android:layout_width">0dp</item>
